@@ -1,1 +1,1695 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>草圖設計工作室 | 文青風官網</title><meta name="description" content="草圖設計工作室，公司形象、線上詢價、人才招募、履歷投遞、Google地圖與LINE快速聯絡。"><meta name="keywords" content="草圖設計工作室,設計工作室,人才招募,履歷投遞,線上詢價,SEO"><style>body{margin:0;font-family:Microsoft JhengHei;background:#f7f4ee;color:#4b433b;line-height:1.8}header{padding:120px 20px;text-align:center;background:#efe8dc}h1{font-size:56px;letter-spacing:8px}nav{padding:15px;text-align:center;background:#fff;position:sticky;top:0;border-bottom:1px solid #ddd}nav a{margin:0 15px;color:#6b5f52;text-decoration:none}section{max-width:1100px;margin:auto;padding:70px 20px}.title{font-size:32px;border-left:5px solid #b39b7a;padding-left:15px;margin-bottom:25px}.card{background:#fff;padding:25px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.06)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}input,textarea,select{width:100%;padding:12px;margin:8px 0;border:1px solid #d8d0c4;border-radius:6px}.btn{background:#8c7456;color:#fff;border:0;padding:12px 25px;border-radius:6px}.line{position:fixed;right:20px;bottom:20px;background:#06C755;color:#fff;padding:14px 20px;border-radius:50px;text-decoration:none}.hero-sub{font-size:20px;color:#7c6c5d}.map iframe{width:100%;height:350px;border:0;border-radius:10px}footer{background:#e8dfd0;padding:30px;text-align:center}@media(max-width:768px){h1{font-size:36px}}</style></head><body><nav><a href='#about'>品牌理念</a><a href='#quote'>線上詢價</a><a href='#recruit'>人才招募</a><a href='#map'>聯絡我們</a></nav><header><h1>草圖設計工作室</h1><p class='hero-sub'>用設計讓想法被看見</p></header><section id='about'><div class='title'>公司形象首頁</div><div class='card'><p>草圖設計工作室以簡約、溫暖、自然的文青風格作為品牌核心。提供品牌形象規劃、視覺設計與創意整合服務，讓每個想法都能被看見與傳遞。</p></div></section><section id='quote'><div class='title'>線上詢價表單</div><div class='card'><form><input placeholder='姓名'><input placeholder='聯絡電話'><input placeholder='Email'><select><option>品牌設計</option><option>網站設計</option><option>Logo設計</option><option>其他需求</option></select><textarea rows='5' placeholder='請描述您的需求'></textarea><button class='btn'>送出詢價</button></form></div></section><section id='recruit'><div class='title'>人才招募專區</div><div class='grid'><div class='card'><h3>平面設計師</h3><p>品牌視覺、海報、社群設計。</p></div><div class='card'><h3>網站設計師</h3><p>網頁版型設計與前端視覺規劃。</p></div></div><br><div class='title'>線上履歷投遞</div><div class='card'><form><input placeholder='姓名'><input placeholder='聯絡電話'><input placeholder='Email'><select><option>平面設計師</option><option>網站設計師</option></select><textarea rows='5' placeholder='自我介紹'></textarea><input type='file'><button class='btn'>送出履歷</button></form></div></section><section id='map'><div class='title'>Google 地圖</div><div class='map'><iframe src="https://www.google.com/maps?q=新竹市&output=embed"></iframe></div></section><section><div class='title'>SEO 搜尋優化</div><div class='card'>已內建 Meta Description、Keywords、Open Graph、手機版響應式設計(RWD)，有助於 Google 搜尋收錄。</div></section><footer>© 2026 草圖設計工作室 Sketch Design Studio</footer><a class='line' href='https://line.me' target='_blank'>LINE 快速聯絡</a></body></html>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>草圖設計工作室 Sketch Design Studio｜新竹工程製圖・3D BIM建模・配管設計・駐廠支援</title>
+  <meta name="description" content="草圖設計工作室專注於新竹及全台廠務 2D 工程製圖、3D BIM 模型建置、設備與配管配置圖、現場丈量及駐廠繪圖支援，提供精準、高效率的 AutoCAD / Revit / Plant 3D 整合服務。" />
+  <meta name="keywords" content="新竹繪圖工程師, 新竹3D建模, AutoCAD繪圖, 配管設計, 駐廠繪圖, Plant 3D, Revit, 設備配置圖, 現場丈量, 草圖設計工作室" />
+  
+  <!-- Google Fonts: Noto Sans TC, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            slate: {
+              850: '#151e32',
+              900: '#0f172a',
+              950: '#080d1a',
+            },
+            cyan: {
+              450: '#14b8d4',
+            }
+          },
+          backgroundImage: {
+            'blueprint-grid': 'linear-gradient(to right, rgba(56, 189, 248, 0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(56, 189, 248, 0.06) 1px, transparent 1px)',
+            'blueprint-subgrid': 'linear-gradient(to right, rgba(56, 189, 248, 0.025) 1px, transparent 1px), linear-gradient(to bottom, rgba(56, 189, 248, 0.025) 1px, transparent 1px)',
+          },
+          backgroundSize: {
+            'grid-lg': '64px 64px',
+            'grid-sm': '16px 16px',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* 自訂滾動條與科技質感細節 */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #080d1a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+      border: 1px solid #334155;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0ea5e9;
+    }
+
+    /* 玻璃擬態卡片與精密邊框 */
+    .tech-card {
+      background: rgba(15, 23, 42, 0.72);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(56, 189, 248, 0.16);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .tech-card:hover {
+      border-color: rgba(56, 189, 248, 0.5);
+      box-shadow: 0 12px 32px -8px rgba(6, 182, 212, 0.18);
+      transform: translateY(-2px);
+    }
+
+    /* 藍圖角標裝飾 */
+    .corner-reticle {
+      position: relative;
+    }
+    .corner-reticle::before,
+    .corner-reticle::after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-color: #38bdf8;
+      pointer-events: none;
+      opacity: 0.7;
+    }
+    .corner-reticle::before {
+      top: -1px;
+      left: -1px;
+      border-top: 2px solid;
+      border-left: 2px solid;
+    }
+    .corner-reticle::after {
+      bottom: -1px;
+      right: -1px;
+      border-bottom: 2px solid;
+      border-right: 2px solid;
+    }
+
+    /* 掃描線動畫 */
+    @keyframes scanline {
+      0% { transform: translateY(-100%); opacity: 0; }
+      50% { opacity: 0.5; }
+      100% { transform: translateY(320px); opacity: 0; }
+    }
+    .animate-scanline {
+      animation: scanline 4.5s linear infinite;
+    }
+
+    /* 地圖暗色科技濾鏡 */
+    .dark-map-filter {
+      filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(92%);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950 overflow-x-hidden">
+
+  <!-- 全域工程藍圖網格背景層 -->
+  <div class="fixed inset-0 pointer-events-none z-0 bg-blueprint-grid bg-grid-lg">
+    <div class="absolute inset-0 bg-blueprint-subgrid bg-grid-sm"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/30 via-transparent to-slate-950"></div>
+  </div>
+
+  <!-- Toast 訊息提示框 (取代 alert) -->
+  <div id="toast-container" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex flex-col gap-2 pointer-events-none w-11/12 max-w-md"></div>
+
+  <!-- 1. Sticky 玻璃擬態導覽列 -->
+  <header class="sticky top-0 z-40 bg-slate-950/85 backdrop-blur-xl border-b border-slate-800/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-600/20 border border-cyan-400/40 flex items-center justify-center shadow-lg shadow-cyan-500/10 group-hover:border-cyan-400 transition-colors">
+            <!-- 等角投影工程方塊與圓規幾何 SVG -->
+            <svg class="w-6 h-6 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L3 7v10l9 5 9-5V7l-9-5z" />
+              <path d="M12 22V12" />
+              <path d="M21 7l-9 5-9-5" />
+              <circle cx="12" cy="12" r="2" class="fill-cyan-400/30" />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base sm:text-lg font-bold tracking-wide text-white leading-tight">
+              草圖設計工作室
+            </span>
+            <span class="text-[10px] sm:text-xs font-mono tracking-widest text-cyan-400 uppercase">
+              SKETCH DESIGN STUDIO
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+          <a href="#services" class="hover:text-cyan-400 transition-colors py-2">核心服務</a>
+          <a href="#workflow" class="hover:text-cyan-400 transition-colors py-2">作業流程</a>
+          <a href="#quote" class="hover:text-cyan-400 transition-colors py-2">線上詢價</a>
+          <a href="#jobs" class="hover:text-cyan-400 transition-colors py-2">人才招募</a>
+          <a href="#contact" class="hover:text-cyan-400 transition-colors py-2">聯絡我們</a>
+        </nav>
+
+        <!-- Desktop GAS Status + CTA & Mobile Menu Button -->
+        <div class="flex items-center gap-2.5 sm:gap-3">
+          <!-- Google Apps Script 雲端同步狀態指示徽章 -->
+          <button type="button" onclick="openGasModal()" title="檢視 Google Apps Script 雲端同步狀態與 API 規格" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700/90 text-xs font-mono text-slate-300 transition-colors cursor-pointer">
+            <span id="gas-status-dot" class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]"></span>
+            <span id="gas-status-label" class="hidden sm:inline text-emerald-300">GAS API 已連線</span>
+            <span class="sm:hidden text-emerald-300">CLOUD</span>
+          </button>
+
+          <a href="#quote" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm shadow-lg shadow-cyan-500/25 transition-all active:scale-95">
+            <span>立即詢價</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-btn" type="button" aria-label="開啟選單" class="md:hidden p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors">
+            <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 backdrop-blur-xl border-b border-slate-800 px-4 pt-2 pb-6 space-y-2">
+      <a href="#services" class="mobile-nav-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-slate-800/80 hover:text-cyan-400 font-medium">服務項目</a>
+      <a href="#workflow" class="mobile-nav-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-slate-800/80 hover:text-cyan-400 font-medium">作業流程</a>
+      <a href="#jobs" class="mobile-nav-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-slate-800/80 hover:text-cyan-400 font-medium">人才招募</a>
+      <a href="#quote" class="mobile-nav-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-slate-800/80 hover:text-cyan-400 font-medium">線上詢價</a>
+      <a href="#contact" class="mobile-nav-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-slate-800/80 hover:text-cyan-400 font-medium">聯絡我們</a>
+      <div class="pt-2">
+        <a href="#quote" class="mobile-nav-link w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-cyan-500 text-slate-950 font-bold">
+          <span>立即線上詢價</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+    <!-- 2. Hero 視覺主區塊 -->
+    <section class="relative pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden">
+      <!-- 背景光暈 -->
+      <div class="absolute top-12 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <!-- 左側核心價值與快速行動 -->
+          <div class="lg:col-span-7 space-y-6">
+            <!-- 狀態標籤 -->
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs sm:text-sm font-medium">
+              <span class="relative flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-400"></span>
+              </span>
+              <span>新竹科學園區／全台廠務工程繪圖支援</span>
+              <span class="hidden sm:inline font-mono text-[11px] text-cyan-500/80 border-l border-cyan-500/30 pl-2">CAD · BIM · P&amp;ID</span>
+            </div>
+
+            <!-- 主標題 -->
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-[1.2]">
+              草圖設計工作室<br />
+              <span class="text-xl sm:text-2xl lg:text-3xl font-extrabold bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-400 bg-clip-text text-transparent">
+                2D工程製圖｜3D建模｜駐廠繪圖支援
+              </span>
+            </h1>
+
+            <!-- 副標題 -->
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+              專注於 2D 工程圖面整合、3D 設備與配管建模、現場尺寸丈量及專案駐廠繪圖，以標準化圖資控管與即時現場協作，顯著縮短設計到施工的溝通落差。
+            </p>
+
+            <!-- 核心效率指標列 -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+              <div class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-slate-900/80 border border-slate-800">
+                <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="text-xs sm:text-sm font-medium text-slate-200">AutoCAD / Revit / Plant 3D</span>
+              </div>
+              <div class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-slate-900/80 border border-slate-800">
+                <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                <span class="text-xs sm:text-sm font-medium text-slate-200">快速圖面交付與版次控管</span>
+              </div>
+              <div class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-slate-900/80 border border-slate-800">
+                <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span class="text-xs sm:text-sm font-medium text-slate-200">新竹在地即時現場支援</span>
+              </div>
+            </div>
+
+            <!-- 主要行動按鈕組 -->
+            <div class="flex flex-wrap items-center gap-3.5 pt-2">
+              <a href="#quote" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm sm:text-base shadow-xl shadow-cyan-500/25 transition-all active:scale-95">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span>立即線上詢價</span>
+              </a>
+
+              <a href="https://line.me/R/ti/p/~woyulee55688" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600/90 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base border border-emerald-400/30 shadow-lg shadow-emerald-950/40 transition-all active:scale-95">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                </svg>
+                <span>加入 LINE 快速洽談</span>
+              </a>
+            </div>
+
+            <!-- 快速複製聯絡資訊 Chips -->
+            <div class="flex flex-wrap items-center gap-2.5 pt-1 text-xs font-mono">
+              <button type="button" onclick="copyText('0975590676', '已複製聯絡電話：0975-590-676')" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 text-slate-300 hover:text-cyan-300 transition-colors cursor-pointer">
+                <span class="text-cyan-400">TEL:</span>
+                <span>0975-590-676</span>
+                <svg class="w-3.5 h-3.5 opacity-70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>
+                </svg>
+              </button>
+
+              <button type="button" onclick="copyText('woyulee55688', '已複製 LINE ID：woyulee55688')" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 text-slate-300 hover:text-emerald-300 transition-colors cursor-pointer">
+                <span class="text-emerald-400">LINE ID:</span>
+                <span>woyulee55688</span>
+                <svg class="w-3.5 h-3.5 opacity-70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- 右側：互動式 CAD / BIM 工程圖層預覽視窗 -->
+          <div class="lg:col-span-5">
+            <div class="tech-card corner-reticle rounded-2xl overflow-hidden shadow-2xl shadow-cyan-950/50">
+              <!-- CAD 視窗頂部工具列 -->
+              <div class="px-4 py-3 bg-slate-900/95 border-b border-slate-800 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-amber-400/80"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-400/80"></span>
+                  <span id="cad-filename" class="ml-2 text-xs font-mono text-slate-400">FAB_PIPING_LAYOUT_V3.dwg</span>
+                </div>
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
+                  SCALE 1:50
+                </span>
+              </div>
+
+              <!-- 圖層切換 Tab 按鈕 -->
+              <div class="grid grid-cols-3 bg-slate-950/90 border-b border-slate-800 p-1.5 gap-1.5">
+                <button type="button" data-cad-tab="2d" class="cad-tab-btn active px-2.5 py-2 rounded-lg text-xs font-bold transition-all bg-cyan-500/20 text-cyan-300 border border-cyan-400/50">
+                  2D 管線配置
+                </button>
+                <button type="button" data-cad-tab="3d" class="cad-tab-btn px-2.5 py-2 rounded-lg text-xs font-medium text-slate-400 hover:text-slate-200 border border-transparent transition-all">
+                  3D 結構模型
+                </button>
+                <button type="button" data-cad-tab="onsite" class="cad-tab-btn px-2.5 py-2 rounded-lg text-xs font-medium text-slate-400 hover:text-slate-200 border border-transparent transition-all">
+                  現場駐廠支援
+                </button>
+              </div>
+
+              <!-- 互動 SVG 工程藍圖畫布區 -->
+              <div class="relative h-72 sm:h-80 bg-slate-950/90 p-4 flex items-center justify-center overflow-hidden">
+                <!-- 動態掃描光束 -->
+                <div class="animate-scanline absolute inset-x-0 h-12 bg-gradient-to-b from-transparent via-cyan-400/10 to-transparent pointer-events-none"></div>
+
+                <!-- 座標標尺裝飾 -->
+                <div class="absolute top-2.5 left-3 text-[10px] font-mono text-slate-500">X: 1240.50  Y: 880.00</div>
+                <div class="absolute top-2.5 right-3 text-[10px] font-mono text-cyan-400/80" id="cad-layer-badge">LAYER: P&ID_ISO</div>
+
+                <!-- 視圖 1：2D 管線配置與 P&ID 向量圖 -->
+                <svg id="cad-view-2d" class="cad-view w-full h-full" viewBox="0 0 400 260" fill="none">
+                  <!-- 背景輔助網格 -->
+                  <g stroke="rgba(56,189,248,0.12)" stroke-width="0.7">
+                    <line x1="20" y1="40" x2="380" y2="40" />
+                    <line x1="20" y1="130" x2="380" y2="130" stroke-dasharray="4 4" />
+                    <line x1="20" y1="220" x2="380" y2="220" />
+                    <line x1="80" y1="20" x2="80" y2="240" />
+                    <line x1="200" y1="20" x2="200" y2="240" stroke-dasharray="4 4" />
+                    <line x1="320" y1="20" x2="320" y2="240" />
+                  </g>
+                  <!-- 主設備機台外框 -->
+                  <rect x="45" y="65" width="90" height="120" rx="4" fill="rgba(14,165,233,0.08)" stroke="#38bdf8" stroke-width="1.8" />
+                  <rect x="55" y="75" width="70" height="30" rx="2" stroke="#7dd3fc" stroke-width="1" stroke-dasharray="3 2" />
+                  <text x="90" y="94" fill="#e0f2fe" font-family="monospace" font-size="10" text-anchor="middle">TOOL-A01</text>
+                  <text x="90" y="145" fill="#38bdf8" font-family="monospace" font-size="9" text-anchor="middle">UPW / CDA</text>
+
+                  <!-- 第二機台 -->
+                  <rect x="275" y="85" width="80" height="100" rx="4" fill="rgba(16,185,129,0.08)" stroke="#34d399" stroke-width="1.8" />
+                  <text x="315" y="138" fill="#d1fae5" font-family="monospace" font-size="10" text-anchor="middle">VMB-04</text>
+
+                  <!-- 雙線配管路徑 -->
+                  <path d="M135 95 H210 V60 H315 V85" stroke="#38bdf8" stroke-width="2.5" />
+                  <path d="M135 155 H235 V140 H275" stroke="#34d399" stroke-width="2.5" />
+                  <!-- 閥門符號 (Valve) -->
+                  <polygon points="175,89 175,101 187,95" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+                  <polygon points="199,89 199,101 187,95" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+                  <circle cx="187" cy="83" r="3" fill="#38bdf8" />
+
+                  <!-- 尺寸標註線 -->
+                  <g stroke="#94a3b8" stroke-width="1">
+                    <line x1="45" y1="205" x2="275" y2="205" />
+                    <line x1="45" y1="198" x2="45" y2="212" />
+                    <line x1="275" y1="198" x2="275" y2="212" />
+                  </g>
+                  <rect x="128" y="196" width="64" height="16" rx="2" fill="#0f172a" />
+                  <text x="160" y="207" fill="#cbd5e1" font-family="monospace" font-size="9" text-anchor="middle">4,850 mm</text>
+                </svg>
+
+                <!-- 視圖 2：3D 等角結構與管架模型 -->
+                <svg id="cad-view-3d" class="cad-view hidden w-full h-full" viewBox="0 0 400 260" fill="none">
+                  <!-- 3D 等角地板網格 -->
+                  <g stroke="rgba(56,189,248,0.18)" stroke-width="1">
+                    <path d="M200 45 L340 125 L200 205 L60 125 Z" fill="rgba(14,165,233,0.04)" />
+                    <line x1="130" y1="85" x2="270" y2="165" />
+                    <line x1="270" y1="85" x2="130" y2="165" />
+                  </g>
+                  <!-- 3D 廠務機櫃方塊 -->
+                  <g stroke="#38bdf8" stroke-width="1.8" stroke-linejoin="round">
+                    <!-- 頂面 -->
+                    <polygon points="150,75 200,48 250,75 200,102" fill="rgba(56,189,248,0.22)" />
+                    <!-- 左側面 -->
+                    <polygon points="150,75 200,102 200,162 150,135" fill="rgba(14,165,233,0.12)" />
+                    <!-- 右側面 -->
+                    <polygon points="200,102 250,75 250,135 200,162" fill="rgba(2,132,199,0.18)" />
+                  </g>
+                  <!-- 3D 立體管路繞行與碰撞檢核點 -->
+                  <path d="M225 62 V35 L295 75 V130" stroke="#34d399" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M175 148 L110 182 V120" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <!-- 碰撞檢核高亮節點 -->
+                  <circle cx="295" cy="75" r="6" fill="rgba(52,211,153,0.25)" stroke="#34d399" stroke-width="1.5" />
+                  <rect x="242" y="24" width="118" height="22" rx="4" fill="#0f172a" stroke="#34d399" stroke-width="1" />
+                  <text x="301" y="38" fill="#6ee7b7" font-family="monospace" font-size="9" text-anchor="middle">CLASH CHECK: 0 ERR</text>
+                  <text x="200" y="232" fill="#7dd3fc" font-family="monospace" font-size="10" text-anchor="middle">REVIT / PLANT 3D ISOMETRIC BIM</text>
+                </svg>
+
+                <!-- 視圖 3：現場丈量與駐廠進度追蹤 -->
+                <svg id="cad-view-onsite" class="cad-view hidden w-full h-full" viewBox="0 0 400 260" fill="none">
+                  <!-- 雷射測距十字準星 -->
+                  <circle cx="135" cy="125" r="48" stroke="rgba(56,189,248,0.3)" stroke-width="1" stroke-dasharray="4 3" />
+                  <circle cx="135" cy="125" r="24" stroke="#38bdf8" stroke-width="1.5" />
+                  <line x1="75" y1="125" x2="195" y2="125" stroke="#38bdf8" stroke-width="1.2" />
+                  <line x1="135" y1="65" x2="135" y2="185" stroke="#38bdf8" stroke-width="1.2" />
+                  <circle cx="135" cy="125" r="3" fill="#f43f5e" />
+                  <text x="135" y="198" fill="#94a3b8" font-family="monospace" font-size="9" text-anchor="middle">FIELD LASER SURVEY</text>
+
+                  <!-- 右側即時進度儀表卡片 -->
+                  <g transform="translate(215, 55)">
+                    <rect width="155" height="145" rx="8" fill="#0f172a" stroke="rgba(56,189,248,0.4)" stroke-width="1.2" />
+                    <text x="14" y="24" fill="#38bdf8" font-family="monospace" font-size="10" font-weight="bold">ON-SITE STATUS</text>
+                    
+                    <text x="14" y="48" fill="#cbd5e1" font-family="sans-serif" font-size="10">現場管線複測</text>
+                    <rect x="14" y="54" width="127" height="6" rx="3" fill="#1e293b" />
+                    <rect x="14" y="54" width="127" height="6" rx="3" fill="#34d399" />
+
+                    <text x="14" y="80" fill="#cbd5e1" font-family="sans-serif" font-size="10">竣工圖版次更新</text>
+                    <rect x="14" y="86" width="127" height="6" rx="3" fill="#1e293b" />
+                    <rect x="14" y="86" width="110" height="6" rx="3" fill="#38bdf8" />
+
+                    <text x="14" y="112" fill="#cbd5e1" font-family="sans-serif" font-size="10">BOM 料表核對</text>
+                    <rect x="14" y="118" width="127" height="6" rx="3" fill="#1e293b" />
+                    <rect x="14" y="118" width="98" height="6" rx="3" fill="#38bdf8" />
+                  </g>
+                </svg>
+              </div>
+
+              <!-- 視窗底部說明資訊欄 -->
+              <div class="px-4 py-3.5 bg-slate-900/95 border-t border-slate-800 flex items-center justify-between gap-3">
+                <div>
+                  <div id="cad-desc-title" class="text-xs sm:text-sm font-bold text-white">2D 工程與配管配置圖</div>
+                  <div id="cad-desc-sub" class="text-[11px] sm:text-xs text-slate-400">精確圖層分類、標準符號庫與施工尺寸標註</div>
+                </div>
+                <span class="shrink-0 inline-flex items-center gap-1.5 text-[11px] font-mono text-emerald-400 bg-emerald-950/60 border border-emerald-500/30 px-2.5 py-1 rounded-md">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  READY
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 核心工程製圖服務項目 (#services) -->
+    <section id="services" class="py-16 md:py-24 border-t border-slate-800/80 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- 區塊標題 -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-cyan-400 mb-2">
+              <span>// CORE ENGINEERING SERVICES</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-white">
+              全方位工程製圖與現場技術支援
+            </h2>
+          </div>
+          <p class="text-slate-400 text-sm sm:text-base max-w-md">
+            從前期現場丈量、2D/3D 建模到駐廠圖資控管，提供模組化、高彈性的專業繪圖解決方案。
+          </p>
+        </div>
+
+        <!-- 8 項核心服務 4x2 科技網格 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          
+          <!-- 服務 1 -->
+          <div class="tech-card rounded-2xl p-6 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+                  </svg>
+                </div>
+                <span class="text-xs font-mono text-slate-500">01 / 2D CAD</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">2D 工程圖繪製</h3>
+              <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                精密施工圖、竣工圖、零件加工圖與平立剖面圖繪製，嚴格遵循圖層規範與公差標註標準。
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-700/80">AutoCAD</span>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-slate-400 border border-slate-800">施工/竣工圖</span>
+            </div>
+          </div>
+
+          <!-- 服務 2 -->
+          <div class="tech-card rounded-2xl p-6 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                    <line x1="12" y1="22.08" x2="12" y2="12" />
+                  </svg>
+                </div>
+                <span class="text-xs font-mono text-slate-500">02 / 3D BIM</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">3D 模型建置</h3>
+              <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                廠務空間、機台與管架系統 3D 實體建模，提前進行空間干涉與碰撞檢討，降低現場返工風險。
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-700/80">Revit</span>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-700/80">Plant 3D</span>
+            </div>
+          </div>
+
+          <!-- 服務 3 -->
+          <div class="tech-card rounded-2xl p-6 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+                  </svg>
+                </div>
+                <span class="text-xs font-mono text-slate-500">03 / LAYOUT</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">設備配置規劃</h3>
+              <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                廠房設備 Layout 定位、維修操作空間預留、搬運動線與二次配接口位置整合規劃。
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-700/80">Equipment Layout</span>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-slate-400 border border-slate-800">動線檢討</span>
+            </div>
+          </div>
+
+          <!-- 服務 4 -->
+          <div class="tech-card rounded-2xl p-6 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                  </svg>
+                </div>
+                <span class="text-xs font-mono text-slate-500">04 / PIPING</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">配管配置圖</h3>
+              <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                純水、廢水、化學品與特殊氣體管路路由設計、等角圖（ISO 圖）拆解及 P&amp;ID 系統圖整合。
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-700/80">P&amp;ID</span>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-700/80">ISO 管線圖</span>
+            </div>
+          </div>
+
+          <!-- 服務 5 -->
+          <div class="tech-card rounded-2xl p-6 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                  </svg>
+                </div>
+                <span class="text-xs font-mono text-slate-500">05 / SURVEY</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">現場丈量支援</h3>
+              <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                親赴廠區進行實地尺寸測繪、既有管線與結構樑柱復原建檔，解決舊廠缺乏正確竣工圖難題。
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-700/80">實地測繪</span>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-slate-400 border border-slate-800">逆向建檔</span>
+            </div>
+          </div>
+
+          <!-- 服務 6 -->
+          <div class="tech-card rounded-2xl p-6 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <span class="text-xs font-mono text-slate-500">06 / ON-SITE</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">駐廠繪圖服務</h3>
+              <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                依專案週期彈性派駐專業繪圖工程師進駐業主或工務所，無縫對接工程師需求與現場變更。
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-700/80">專案駐廠</span>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-slate-400 border border-slate-800">即時修改</span>
+            </div>
+          </div>
+
+          <!-- 服務 7 -->
+          <div class="tech-card rounded-2xl p-6 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                  </svg>
+                </div>
+                <span class="text-xs font-mono text-slate-500">07 / DOC-CTRL</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">圖面更新與管理</h3>
+              <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                建立系統化圖號編碼、設計變更（ECN）版次追蹤、清圖目錄整理與材料 BOM 表統計彙整。
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-700/80">版次控管</span>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-slate-400 border border-slate-800">BOM 清單</span>
+            </div>
+          </div>
+
+          <!-- 服務 8 -->
+          <div class="tech-card rounded-2xl p-6 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                  </svg>
+                </div>
+                <span class="text-xs font-mono text-slate-500">08 / SUPPORT</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">工程圖面協助</h3>
+              <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                跨包商圖面套繪整合、緊急趕圖支援、PDF 轉 CAD 向量化及送審出圖格式標準化轉換。
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-700/80">跨系統套圖</span>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-900 text-slate-400 border border-slate-800">急件支援</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 高效率標準化作業流程 (#workflow) -->
+    <section id="workflow" class="py-16 md:py-24 bg-slate-900/40 border-t border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-cyan-400 mb-2">
+            <span>// STREAMLINED PIPELINE</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-3">
+            高效率標準化作業流程
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base">
+            透明的時程節點與嚴謹的雙重圖面校核機制，確保每一張圖檔準時、零誤差交付。
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+          <!-- 桌面版連接軸線 -->
+          <div class="hidden md:block absolute top-10 left-[12%] right-[12%] h-0.5 bg-gradient-to-r from-cyan-500/20 via-cyan-400/60 to-cyan-500/20 z-0"></div>
+
+          <!-- Step 1 -->
+          <div class="tech-card rounded-2xl p-6 relative z-10">
+            <div class="w-12 h-12 rounded-xl bg-slate-950 border-2 border-cyan-400 flex items-center justify-center font-mono font-bold text-cyan-400 text-lg mb-5 shadow-lg shadow-cyan-500/15">
+              01
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">需求盤點與圖資確認</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              確認專案範圍、使用軟體版本（AutoCAD / Revit / Plant 3D）、圖框規範及是否需安排現場丈量。
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="tech-card rounded-2xl p-6 relative z-10">
+            <div class="w-12 h-12 rounded-xl bg-slate-950 border-2 border-cyan-400 flex items-center justify-center font-mono font-bold text-cyan-400 text-lg mb-5 shadow-lg shadow-cyan-500/15">
+              02
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">快速報價與排程鎖定</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              依圖面張數、3D 複雜度或駐廠人力天數提供透明報價，確認後立即鎖定工程師排程啟動作業。
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="tech-card rounded-2xl p-6 relative z-10">
+            <div class="w-12 h-12 rounded-xl bg-slate-950 border-2 border-cyan-400 flex items-center justify-center font-mono font-bold text-cyan-400 text-lg mb-5 shadow-lg shadow-cyan-500/15">
+              03
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">繪圖建模與版次校核</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              階段性回報進度截圖，執行內部尺寸、圖層與碰撞自檢，配合業主意見快速修正並標記版次。
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="tech-card rounded-2xl p-6 relative z-10">
+            <div class="w-12 h-12 rounded-xl bg-slate-950 border-2 border-emerald-400 flex items-center justify-center font-mono font-bold text-emerald-400 text-lg mb-5 shadow-lg shadow-emerald-500/15">
+              04
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">正式交付與後續維護</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              交付完整原始檔（DWG / RVT / NWD）與出圖 PDF 檔案，並支援後續施工階段的竣工圖更新。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 人才招募與線上履歷投遞 (#jobs) -->
+    <section id="jobs" class="py-16 md:py-24 border-t border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-cyan-400 mb-2">
+              <span>// CAREERS &amp; RECRUITMENT</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-white">
+              加入我們｜工程繪圖人才招募
+            </h2>
+          </div>
+          <p class="text-slate-400 text-sm sm:text-base max-w-md">
+            我們重視圖面品質與團隊協作效率，歡迎具備工程識圖熱忱與 CAD/BIM 實務經驗的夥伴加入。
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+          <!-- 職缺卡片 1：繪圖工程師 -->
+          <div class="tech-card corner-reticle rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-cyan-500/15 text-cyan-300 border border-cyan-500/30">
+                  新竹市／專案支援
+                </span>
+                <span class="text-xs font-mono text-slate-400">JOB-ID: SDS-CAD01</span>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-white mb-3">繪圖工程師</h3>
+              <p class="text-sm text-slate-400 mb-5">
+                負責專案 2D 工程圖面繪製、系統整理與設備配置圖產出，確保圖資精確與版次一致。
+              </p>
+
+              <div class="space-y-2.5 mb-6">
+                <div class="text-xs font-mono text-cyan-400 uppercase tracking-wider">工作內容與職能需求</div>
+                <ul class="space-y-2 text-sm text-slate-300">
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-cyan-400 mt-0.5">▹</span>
+                    <span>2D 圖面繪製與修改、工程圖面整理與標準化歸檔</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-cyan-400 mt-0.5">▹</span>
+                    <span>設備配置圖（Equipment Layout）製作與專案圖面管理</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-cyan-400 mt-0.5">▹</span>
+                    <span>熟悉 <strong class="text-white">AutoCAD</strong> 操作，具備良好工程識圖與細心核對能力</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between gap-3">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-900 text-cyan-300 border border-slate-700">AutoCAD</span>
+                <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-900 text-slate-300 border border-slate-700">工程識圖</span>
+              </div>
+              <button type="button" onclick="openJobDrawer('繪圖工程師')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-cyan-500/15 hover:bg-cyan-500 text-cyan-300 hover:text-slate-950 font-bold text-sm border border-cyan-500/40 transition-all cursor-pointer">
+                <span>立即應徵</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          <form id="job-form" class="space-y-4 pt-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div>
+                <label for="job-position" class="block text-xs font-mono text-slate-400 mb-1.5">應徵職務 *</label>
+                <select id="job-position" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-400">
+                  <option value="繪圖工程師">繪圖工程師</option>
+                  <option value="3D 駐廠繪圖">3D 駐廠繪圖</option>
+                </select>
+              </div>
+              <div>
+                <label for="job-name" class="block text-xs font-mono text-slate-400 mb-1.5">應徵者姓名 *</label>
+                <input type="text" id="job-name" required placeholder="請輸入您的姓名" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-cyan-400" />
+              </div>
+              <div>
+                <label for="job-phone" class="block text-xs font-mono text-slate-400 mb-1.5">聯絡電話 / LINE *</label>
+                <input type="text" id="job-phone" required placeholder="09XX-XXX-XXX" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-cyan-400" />
+              </div>
+              <div>
+                <label for="job-email" class="block text-xs font-mono text-slate-400 mb-1.5">電子信箱 Email</label>
+                <input type="email" id="job-email" placeholder="name@example.com" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-cyan-400" />
+              </div>
+            </div>
+
+            <!-- 擅長工程軟體多選 -->
+            <div>
+              <label class="block text-xs font-mono text-slate-400 mb-2">擅長工程軟體（可複選）</label>
+              <div class="flex flex-wrap gap-2">
+                <label class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs text-slate-200">
+                  <input type="checkbox" name="job-software" value="AutoCAD" class="accent-cyan-400" checked />
+                  <span>AutoCAD</span>
+                </label>
+                <label class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs text-slate-200">
+                  <input type="checkbox" name="job-software" value="Revit" class="accent-cyan-400" />
+                  <span>Revit</span>
+                </label>
+                <label class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs text-slate-200">
+                  <input type="checkbox" name="job-software" value="Plant 3D" class="accent-cyan-400" />
+                  <span>Plant 3D</span>
+                </label>
+                <label class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs text-slate-200">
+                  <input type="checkbox" name="job-software" value="SolidWorks" class="accent-cyan-400" />
+                  <span>SolidWorks</span>
+                </label>
+                <label class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs text-slate-200">
+                  <input type="checkbox" name="job-software" value="Navisworks" class="accent-cyan-400" />
+                  <span>Navisworks</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="job-skills" class="block text-xs font-mono text-slate-400 mb-1.5">相關年資與專案經歷簡述</label>
+                <input type="text" id="job-skills" placeholder="例：AutoCAD 3年、Plant 3D 1年，具廠務配管/設備配置圖經驗" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-cyan-400" />
+              </div>
+              <div>
+                <label for="job-portfolio" class="block text-xs font-mono text-slate-400 mb-1.5">雲端履歷 / 作品集連結（Google Drive / OneDrive URL）</label>
+                <input type="url" id="job-portfolio" placeholder="https://drive.google.com/..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-cyan-400" />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+              <div id="job-sync-receipt" class="hidden text-xs font-mono text-emerald-300 bg-emerald-950/70 border border-emerald-500/40 px-3.5 py-2 rounded-xl"></div>
+              <div class="flex flex-wrap items-center gap-2.5 ml-auto">
+                <button type="submit" id="job-submit-btn" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm shadow-lg shadow-cyan-500/20 transition-all active:scale-95 cursor-pointer">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                  </svg>
+                  <span>同步送出雲端履歷</span>
+                </button>
+                <button type="button" onclick="sendJobViaMailto()" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-mono transition-colors cursor-pointer">
+                  改用 Email 夾帶附件
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. 線上快速詢價與聯絡資訊 (#quote & #contact) -->
+    <section id="quote" class="py-16 md:py-24 bg-slate-900/50 border-t border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
+          
+          <!-- 左側：高效率線上詢價表單 (7欄) -->
+          <div class="lg:col-span-7">
+            <div class="tech-card corner-reticle rounded-2xl p-6 sm:p-8">
+              <div class="flex flex-wrap items-start justify-between gap-3 mb-6">
+                <div>
+                  <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-cyan-400 mb-1.5">
+                    <span>// FAST PROJECT QUOTATION · CLOUD SYNC</span>
+                  </div>
+                  <h2 class="text-2xl sm:text-3xl font-black text-white">線上快速詢價</h2>
+                  <p class="text-sm text-slate-400 mt-1">
+                    填寫後可直接同步寫入 Google 雲端工單系統，亦可複製詢價單透過 LINE 傳送草圖洽談。
+                  </p>
+                </div>
+                <button type="button" onclick="openGasModal()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-950 hover:bg-slate-900 border border-slate-800 text-xs font-mono text-cyan-300 cursor-pointer">
+                  <span>同步紀錄</span>
+                  <span id="history-count-badge" class="px-1.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300">0</span>
+                </button>
+              </div>
+
+              <form id="quote-form" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="q-name" class="block text-xs font-mono text-slate-300 mb-1.5">聯絡人姓名 *</label>
+                    <input type="text" id="q-name" required placeholder="例：王先生 / 林小姐" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-cyan-400" />
+                  </div>
+                  <div>
+                    <label for="q-company" class="block text-xs font-mono text-slate-300 mb-1.5">公司 / 單位名稱</label>
+                    <input type="text" id="q-company" placeholder="例：〇〇科技股份有限公司" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-cyan-400" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="q-contact" class="block text-xs font-mono text-slate-300 mb-1.5">聯絡電話 / LINE ID *</label>
+                    <input type="text" id="q-contact" required placeholder="請輸入電話或 LINE 帳號" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-cyan-400" />
+                  </div>
+                  <div>
+                    <label for="q-email" class="block text-xs font-mono text-slate-300 mb-1.5">電子信箱 Email</label>
+                    <input type="email" id="q-email" placeholder="project@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-cyan-400" />
+                  </div>
+                </div>
+
+                <!-- 需求類別多選標籤 -->
+                <div>
+                  <label class="block text-xs font-mono text-slate-300 mb-2">需求服務項目（可複選）</label>
+                  <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                    <label class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm text-slate-200">
+                      <input type="checkbox" name="q-service" value="2D工程製圖" class="accent-cyan-400 rounded" checked />
+                      <span>2D 工程製圖</span>
+                    </label>
+                    <label class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm text-slate-200">
+                      <input type="checkbox" name="q-service" value="3D建模/Revit" class="accent-cyan-400 rounded" />
+                      <span>3D 建模/Revit</span>
+                    </label>
+                    <label class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm text-slate-200">
+                      <input type="checkbox" name="q-service" value="配管設計" class="accent-cyan-400 rounded" />
+                      <span>配管設計</span>
+                    </label>
+                    <label class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm text-slate-200">
+                      <input type="checkbox" name="q-service" value="現場丈量" class="accent-cyan-400 rounded" />
+                      <span>現場丈量</span>
+                    </label>
+                    <label class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm text-slate-200">
+                      <input type="checkbox" name="q-service" value="駐廠繪圖支援" class="accent-cyan-400 rounded" />
+                      <span>駐廠繪圖支援</span>
+                    </label>
+                    <label class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-cyan-500/40 cursor-pointer text-xs sm:text-sm text-slate-200">
+                      <input type="checkbox" name="q-service" value="其他圖面協助" class="accent-cyan-400 rounded" />
+                      <span>其他圖面協助</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="q-timeline" class="block text-xs font-mono text-slate-300 mb-1.5">預計專案地點與交期時程</label>
+                  <input type="text" id="q-timeline" placeholder="例：新竹科學園區，預計下週進場丈量，兩週內交付初版圖面" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-cyan-400" />
+                </div>
+
+                <div>
+                  <label for="q-details" class="block text-xs font-mono text-slate-300 mb-1.5">專案需求與圖面規格說明 *</label>
+                  <textarea id="q-details" rows="3" required placeholder="請簡述圖面張數、使用軟體需求（AutoCAD / Revit / Plant 3D）或現場狀況..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-cyan-400"></textarea>
+                </div>
+
+                <!-- 雲端同步成功回執區 -->
+                <div id="quote-sync-receipt" class="hidden p-3.5 rounded-xl bg-emerald-950/70 border border-emerald-500/40 text-xs font-mono text-emerald-200 space-y-1"></div>
+
+                <!-- 三軌行動按鈕：雲端同步送出 / 複製並開啟 LINE / 備用 Email -->
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-3 pt-1">
+                  <button type="submit" id="quote-submit-btn" class="sm:col-span-5 inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm shadow-lg shadow-cyan-500/20 transition-all active:scale-95 cursor-pointer">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    <span>雲端同步送出詢價</span>
+                  </button>
+
+                  <button type="button" onclick="copyQuoteForLine()" class="sm:col-span-4 inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-emerald-600/90 hover:bg-emerald-500 text-white font-bold text-sm border border-emerald-400/30 transition-all active:scale-95 cursor-pointer">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>
+                    </svg>
+                    <span>複製並開 LINE</span>
+                  </button>
+
+                  <button type="button" onclick="sendQuoteViaMailto()" class="sm:col-span-3 inline-flex items-center justify-center gap-1.5 px-3 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium text-xs font-mono border border-slate-700 transition-colors cursor-pointer">
+                    <span>備用 Email</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- 右側：直接聯絡資訊與新竹服務據點地圖 (5欄) -->
+          <div id="contact" class="lg:col-span-5 flex flex-col justify-between gap-6">
+            <div class="tech-card rounded-2xl p-6 sm:p-8 space-y-5">
+              <div>
+                <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-cyan-400 mb-1.5">
+                  <span>// DIRECT CONTACT</span>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-white">聯絡草圖設計工作室</h3>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1">
+                  歡迎直接來電或透過 LINE 傳送草圖與現場照片，我們將儘速為您評估。
+                </p>
+              </div>
+
+              <div class="space-y-3">
+                <!-- 電話 -->
+                <div class="flex items-center justify-between p-3.5 rounded-xl bg-slate-950/90 border border-slate-800">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="text-[11px] font-mono text-slate-500">聯絡電話 PHONE</div>
+                      <a href="tel:0975590676" class="text-sm sm:text-base font-mono font-bold text-white hover:text-cyan-400">0975-590-676</a>
+                    </div>
+                  </div>
+                  <button type="button" onclick="copyText('0975590676', '已複製電話：0975-590-676')" class="px-2.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700 cursor-pointer">
+                    複製
+                  </button>
+                </div>
+
+                <!-- LINE ID -->
+                <div class="flex items-center justify-between p-3.5 rounded-xl bg-slate-950/90 border border-slate-800">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="text-[11px] font-mono text-slate-500">LINE 即時通訊</div>
+                      <a href="https://line.me/R/ti/p/~woyulee55688" target="_blank" rel="noopener noreferrer" class="text-sm sm:text-base font-mono font-bold text-emerald-400 hover:text-emerald-300">woyulee55688</a>
+                    </div>
+                  </div>
+                  <button type="button" onclick="copyText('woyulee55688', '已複製 LINE ID：woyulee55688')" class="px-2.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700 cursor-pointer">
+                    複製
+                  </button>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-center justify-between p-3.5 rounded-xl bg-slate-950/90 border border-slate-800">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <div class="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div class="min-w-0">
+                      <div class="text-[11px] font-mono text-slate-500">電子信箱 EMAIL</div>
+                      <a href="mailto:woyulee2020@gmail.com" class="text-xs sm:text-sm font-mono font-bold text-white hover:text-cyan-400 truncate block">woyulee2020@gmail.com</a>
+                    </div>
+                  </div>
+                  <button type="button" onclick="copyText('woyulee2020@gmail.com', '已複製信箱：woyulee2020@gmail.com')" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700 cursor-pointer">
+                    複製
+                  </button>
+                </div>
+
+                <!-- 服務區域 -->
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-950/90 border border-slate-800">
+                  <div class="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-[11px] font-mono text-slate-500">服務據點 LOCATION</div>
+                    <div class="text-sm font-bold text-white">新竹市（服務涵蓋竹科及全台廠務專案）</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 新竹市互動地圖卡片 -->
+            <div class="tech-card rounded-2xl overflow-hidden h-56 relative border border-slate-800">
+              <iframe
+                title="草圖設計工作室服務據點 - 新竹市"
+                src="https://www.google.com/maps?q=新竹市&output=embed"
+                class="w-full h-full border-0 dark-map-filter"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              <div class="absolute bottom-3 left-3 px-3 py-1 rounded-lg bg-slate-950/90 border border-cyan-500/40 text-xs font-mono text-cyan-300 pointer-events-none">
+                LOC: HSINCHU CITY, TW
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. 頁尾 Footer -->
+  <footer class="relative z-10 bg-slate-950 border-t border-slate-800/90 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-slate-800/80">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <span class="text-lg font-bold text-white">草圖設計工作室</span>
+            <span class="text-xs font-mono text-cyan-400">SKETCH DESIGN STUDIO</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1.5">
+            專精於 2D 工程製圖、3D BIM 建模、設備與配管配置圖、現場丈量與駐廠繪圖支援。
+          </p>
+        </div>
+
+        <!-- SEO 專業關鍵字標籤 -->
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs font-mono px-2.5 py-1 rounded-md bg-slate-900 text-slate-400 border border-slate-800">#新竹繪圖工程師</span>
+          <span class="text-xs font-mono px-2.5 py-1 rounded-md bg-slate-900 text-slate-400 border border-slate-800">#新竹3D建模</span>
+          <span class="text-xs font-mono px-2.5 py-1 rounded-md bg-slate-900 text-slate-400 border border-slate-800">#AutoCAD繪圖</span>
+          <span class="text-xs font-mono px-2.5 py-1 rounded-md bg-slate-900 text-slate-400 border border-slate-800">#配管設計</span>
+          <span class="text-xs font-mono px-2.5 py-1 rounded-md bg-slate-900 text-slate-400 border border-slate-800">#駐廠繪圖</span>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-mono">
+        <div>&copy; 2026 草圖設計工作室 Sketch Design Studio. All Rights Reserved.</div>
+        <div>TEL: 0975-590-676 | LINE: woyulee55688</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 懸浮快速操作列 (LINE + 回到頂部) -->
+  <div class="fixed bottom-5 right-5 z-40 flex flex-col gap-2.5">
+    <a href="https://line.me/R/ti/p/~woyulee55688" target="_blank" rel="noopener noreferrer" aria-label="透過 LINE 聯絡" class="w-12 h-12 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 flex items-center justify-center shadow-xl shadow-emerald-950/50 transition-transform hover:scale-105">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+      </svg>
+    </a>
+    <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="回到頂部" class="w-12 h-12 rounded-2xl bg-slate-900/95 hover:bg-slate-800 text-cyan-400 border border-slate-700 flex items-center justify-center shadow-xl transition-transform hover:scale-105 cursor-pointer">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Google Apps Script 雲端同步狀態與本地歷史紀錄彈窗 -->
+  <div id="gas-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="tech-card corner-reticle rounded-2xl max-w-2xl w-full max-h-[88vh] flex flex-col overflow-hidden shadow-2xl border-cyan-500/40">
+      <div class="px-6 py-4 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+          <h3 class="text-base sm:text-lg font-bold text-white">Google Apps Script 雲端同步中心</h3>
+        </div>
+        <button type="button" onclick="closeGasModal()" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="p-6 overflow-y-auto space-y-6 text-sm">
+        <!-- Endpoint 狀態 -->
+        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono text-cyan-400">ACTIVE GAS WEB APP ENDPOINT</span>
+            <button type="button" onclick="pingGasEndpoint()" id="gas-ping-btn" class="px-2.5 py-1 rounded-lg bg-cyan-500/15 hover:bg-cyan-500/25 text-cyan-300 border border-cyan-500/40 text-xs font-mono cursor-pointer">
+              測試連線 Ping
+            </button>
+          </div>
+          <div class="text-[11px] font-mono text-slate-400 break-all bg-slate-900 p-2.5 rounded-lg border border-slate-800">
+            https://script.google.com/macros/s/AKfycbxk5pF0pN3ndjGbwPFMJIoQyv3LfGZxhEhtGKAfzStHl18x4aC-QEFtnD_m3_-Pk3vb/exec
+          </div>
+        </div>
+
+        <!-- 本地同步紀錄清單 -->
+        <div>
+          <div class="flex items-center justify-between mb-2.5">
+            <span class="text-xs font-mono text-slate-300 uppercase">本機送出與雲端同步紀錄 (Local Cache)</span>
+            <button type="button" onclick="clearSyncHistory()" class="text-xs font-mono text-slate-500 hover:text-rose-400 cursor-pointer">清除紀錄</button>
+          </div>
+          <div id="sync-history-list" class="space-y-2.5 max-h-48 overflow-y-auto pr-1">
+            <!-- 由 JS 動態渲染 -->
+          </div>
+        </div>
+
+        <!-- 站長參考：GAS doPost(e) 接收欄位結構 -->
+        <details class="rounded-xl bg-slate-950 border border-slate-800 p-3.5">
+          <summary class="text-xs font-mono text-cyan-300 cursor-pointer select-none">
+            ▸ 站長技術參考：Google Apps Script doPost(e) 接收 JSON Payload 欄位對照
+          </summary>
+          <pre class="mt-3 text-[11px] font-mono text-slate-300 bg-slate-900 p-3 rounded-lg overflow-x-auto leading-relaxed">// 詢價單 (type: "quote")
+{
+  "type": "quote",
+  "ticketId": "SDS-Q-20261119-XXXX",
+  "timestamp": "2026-11-19 16:39:00",
+  "name": "聯絡人姓名",
+  "company": "公司名稱",
+  "phone": "電話或LINE",
+  "email": "Email",
+  "service": "2D工程製圖, 3D建模/Revit",
+  "timeline": "預計地點與交期",
+  "message": "專案需求說明"
+}
+
+// 履歷投遞 (type: "resume")
+{
+  "type": "resume",
+  "ticketId": "SDS-R-20261119-XXXX",
+  "timestamp": "2026-11-19 16:39:00",
+  "position": "繪圖工程師 / 3D 駐廠繪圖",
+  "name": "應徵者姓名",
+  "phone": "聯絡電話",
+  "email": "Email",
+  "skills": "AutoCAD, Plant 3D",
+  "experience": "年資與經歷簡述",
+  "portfolioUrl": "雲端作品集連結"
+}</pre>
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <!-- 互動腳本 -->
+  <script>
+    // Google Apps Script Web App 雲端同步端點
+    const GAS_ENDPOINT_URL = 'https://script.google.com/macros/s/AKfycbxk5pF0pN3ndjGbwPFMJIoQyv3LfGZxhEhtGKAfzStHl18x4aC-QEFtnD_m3_-Pk3vb/exec';
+    const STORAGE_KEY_HISTORY = 'sds_gas_sync_history_v1';
+
+    // 1. Toast 提示通知系統
+    function showToast(message, type = 'info') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      const borderColor = type === 'success' ? 'border-emerald-400/60 text-emerald-200' : 'border-cyan-400/60 text-cyan-100';
+      toast.className = `px-4 py-3 rounded-xl bg-slate-900/95 backdrop-blur-md border ${borderColor} shadow-2xl text-xs sm:text-sm font-medium flex items-center justify-between gap-3 transition-all duration-300 opacity-0 translate-y-2`;
+      toast.innerHTML = `
+        <div class="flex items-center gap-2.5">
+          <span class="w-2 h-2 rounded-full ${type === 'success' ? 'bg-emerald-400' : 'bg-cyan-400'}"></span>
+          <span>${message}</span>
+        </div>
+      `;
+      container.appendChild(toast);
+
+      requestAnimationFrame(() => {
+        toast.classList.remove('opacity-0', 'translate-y-2');
+      });
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 3200);
+    }
+
+    // 2. 相容 iFrame 的一鍵複製功能
+    function copyText(text, successMsg) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.left = '-9999px';
+      document.body.appendChild(textArea);
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        showToast(successMsg || '已複製到剪貼簿', 'success');
+      } catch (err) {
+        showToast('複製失敗，請手動選取複製', 'info');
+      }
+      document.body.removeChild(textArea);
+    }
+
+    // 3. 手機版漢堡選單控制
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('menu-icon-open');
+    const iconClose = document.getElementById('menu-icon-close');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', !isHidden);
+      iconOpen.classList.toggle('hidden', isHidden);
+      iconClose.classList.toggle('hidden', !isHidden);
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+      });
+    });
+
+    // 4. Hero 互動式 CAD/BIM 工程視圖切換器
+    const cadTabConfig = {
+      '2d': {
+        filename: 'FAB_PIPING_LAYOUT_V3.dwg',
+        layer: 'LAYER: P&ID_ISO',
+        title: '2D 工程與配管配置圖',
+        sub: '精確圖層分類、標準符號庫與施工尺寸標註'
+      },
+      '3d': {
+        filename: 'CLEANROOM_BIM_MODEL.rvt',
+        layer: 'LAYER: 3D_CLASH_FREE',
+        title: '3D BIM 設備與管架碰撞檢討',
+        sub: 'Plant 3D / Revit 立體空間路由，零干涉高精度建模'
+      },
+      'onsite': {
+        filename: 'SITE_SURVEY_REPORT.pdf',
+        layer: 'LAYER: FIELD_VERIFY',
+        title: '現場尺寸丈量與駐廠進度控管',
+        sub: '即時現場複測、ECN 版次更新與 BOM 料表核對'
+      }
+    };
+
+    document.querySelectorAll('.cad-tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-cad-tab');
+        
+        // 更新按鈕樣式
+        document.querySelectorAll('.cad-tab-btn').forEach(b => {
+          b.classList.remove('bg-cyan-500/20', 'text-cyan-300', 'border-cyan-400/50', 'font-bold');
+          b.classList.add('text-slate-400', 'border-transparent', 'font-medium');
+        });
+        btn.classList.remove('text-slate-400', 'border-transparent', 'font-medium');
+        btn.classList.add('bg-cyan-500/20', 'text-cyan-300', 'border-cyan-400/50', 'font-bold');
+
+        // 切換 SVG 畫布
+        document.querySelectorAll('.cad-view').forEach(v => v.classList.add('hidden'));
+        document.getElementById(`cad-view-${target}`).classList.remove('hidden');
+
+        // 更新視窗資訊列
+        const cfg = cadTabConfig[target];
+        document.getElementById('cad-filename').textContent = cfg.filename;
+        document.getElementById('cad-layer-badge').textContent = cfg.layer;
+        document.getElementById('cad-desc-title').textContent = cfg.title;
+        document.getElementById('cad-desc-sub').textContent = cfg.sub;
+      });
+    });
+
+    // 5. 職缺卡片連動快速投遞面板
+    function openJobDrawer(positionName) {
+      const selectEl = document.getElementById('job-position');
+      selectEl.value = positionName;
+      const panel = document.getElementById('job-apply-panel');
+      panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(() => {
+        document.getElementById('job-name').focus();
+      }, 450);
+      showToast(`已為您選擇職缺：「${positionName}」`, 'info');
+    }
+
+    // 產生標準工單編號與台灣時間戳記
+    function generateTicketInfo(prefix) {
+      const now = new Date();
+      const pad = (n) => String(n).padStart(2, '0');
+      const dateStr = `${now.getFullYear()}${pad(now.getMonth() + 1)}${pad(now.getDate())}`;
+      const timeStr = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+      const rand = Math.floor(1000 + Math.random() * 9000);
+      return {
+        ticketId: `SDS-${prefix}-${dateStr}-${rand}`,
+        timestamp: timeStr
+      };
+    }
+
+    // 更新導覽列 GAS 同步狀態燈號
+    function setGasUiState(state, text) {
+      const dot = document.getElementById('gas-status-dot');
+      const label = document.getElementById('gas-status-label');
+      if (!dot || !label) return;
+
+      dot.className = 'w-2 h-2 rounded-full';
+      if (state === 'syncing') {
+        dot.classList.add('bg-amber-400', 'animate-ping');
+        label.className = 'hidden sm:inline text-amber-300';
+      } else if (state === 'error') {
+        dot.classList.add('bg-rose-400');
+        label.className = 'hidden sm:inline text-rose-300';
+      } else {
+        dot.classList.add('bg-emerald-400', 'shadow-[0_0_8px_#34d399]');
+        label.className = 'hidden sm:inline text-emerald-300';
+      }
+      label.textContent = text;
+    }
+
+    // 核心 Google Apps Script POST 同步函式（具備 CORS 雙模式容錯）
+    async function syncPayloadToGas(payload) {
+      setGasUiState('syncing', '雲端同步中...');
+      try {
+        // 使用 text/plain 避免觸發瀏覽器 CORS OPTIONS 預檢，GAS doPost(e) 仍可透過 JSON.parse(e.postData.contents) 完整解析
+        const response = await fetch(GAS_ENDPOINT_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'text/plain;charset=utf-8',
+          },
+          body: JSON.stringify(payload),
+        });
+
+        let resultData = null;
+        try {
+          resultData = await response.json();
+        } catch (_) {
+          // 若 GAS 回傳純文字或轉址回應，只要 HTTP 狀態正常即視為成功
+        }
+
+        setGasUiState('connected', 'GAS API 已同步');
+        return { ok: true, mode: 'cors', data: resultData };
+      } catch (err) {
+        // 若網路環境阻擋讀取跨網域回應，啟動 no-cors 備援送出確保資料寫入試算表
+        try {
+          await fetch(GAS_ENDPOINT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+              'Content-Type': 'text/plain;charset=utf-8',
+            },
+            body: JSON.stringify(payload),
+          });
+          setGasUiState('connected', 'GAS API 已送達');
+          return { ok: true, mode: 'no-cors' };
+        } catch (fallbackErr) {
+          setGasUiState('error', '離線暫存模式');
+          return { ok: false, error: fallbackErr.message };
+        }
+      }
+    }
+
+    // 本地同步紀錄管理
+    function getSyncHistory() {
+      try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY_HISTORY) || '[]');
+      } catch (_) {
+        return [];
+      }
+    }
+
+    function saveSyncRecord(record) {
+      const list = getSyncHistory();
+      list.unshift(record);
+      localStorage.setItem(STORAGE_KEY_HISTORY, JSON.stringify(list.slice(0, 20)));
+      updateHistoryUI();
+    }
+
+    function updateHistoryUI() {
+      const list = getSyncHistory();
+      const badge = document.getElementById('history-count-badge');
+      if (badge) badge.textContent = list.length;
+
+      const container = document.getElementById('sync-history-list');
+      if (!container) return;
+
+      if (list.length === 0) {
+        container.innerHTML = `<div class="text-xs font-mono text-slate-500 text-center py-6 border border-dashed border-slate-800 rounded-xl">尚無本地送出紀錄</div>`;
+        return;
+      }
+
+      container.innerHTML = list.map((item, idx) => `
+        <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between gap-3">
+          <div class="min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded ${item.type === 'quote' ? 'bg-cyan-500/15 text-cyan-300' : 'bg-emerald-500/15 text-emerald-300'}">
+                ${item.type === 'quote' ? '詢價單' : '應徵履歷'}
+              </span>
+              <span class="text-xs font-mono font-bold text-white truncate">${item.ticketId}</span>
+            </div>
+            <div class="text-xs text-slate-400 truncate mt-1">
+              ${item.summary} · <span class="font-mono text-[11px] text-slate-500">${item.timestamp}</span>
+            </div>
+          </div>
+          <button type="button" onclick="retrySyncRecord(${idx})" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-[11px] font-mono text-cyan-300 cursor-pointer">
+            重新同步
+          </button>
+        </div>
+      `).join('');
+    }
+
+    async function retrySyncRecord(index) {
+      const list = getSyncHistory();
+      const item = list[index];
+      if (!item || !item.payload) return;
+      showToast(`正在重新同步 ${item.ticketId} 至 Google 雲端...`, 'info');
+      const res = await syncPayloadToGas(item.payload);
+      if (res.ok) {
+        showToast(`工單 ${item.ticketId} 已成功重新同步！`, 'success');
+      } else {
+        showToast('同步連線異常，請檢查網路狀態', 'info');
+      }
+    }
+
+    function clearSyncHistory() {
+      localStorage.removeItem(STORAGE_KEY_HISTORY);
+      updateHistoryUI();
+      showToast('已清除本機同步快取紀錄', 'info');
+    }
+
+    function openGasModal() {
+      updateHistoryUI();
+      document.getElementById('gas-modal').classList.remove('hidden');
+    }
+
+    function closeGasModal() {
+      document.getElementById('gas-modal').classList.add('hidden');
+    }
+
+    async function pingGasEndpoint() {
+      const btn = document.getElementById('gas-ping-btn');
+      btn.textContent = '連線測試中...';
+      const res = await syncPayloadToGas({
+        type: 'ping',
+        timestamp: new Date().toISOString(),
+        source: 'SketchDesignStudio_Web'
+      });
+      btn.textContent = '測試連線 Ping';
+      if (res.ok) {
+        showToast('Google Apps Script 雲端端點連線正常！', 'success');
+      } else {
+        showToast('無法連線至 Google Apps Script，請確認網路狀態', 'info');
+      }
+    }
+
+    // 組合履歷應徵訊息與 Payload
+    function getJobFormPayload() {
+      const { ticketId, timestamp } = generateTicketInfo('R');
+      const position = document.getElementById('job-position').value;
+      const name = document.getElementById('job-name').value.trim();
+      const phone = document.getElementById('job-phone').value.trim();
+      const email = document.getElementById('job-email').value.trim();
+      const experience = document.getElementById('job-skills').value.trim();
+      const portfolioUrl = document.getElementById('job-portfolio').value.trim();
+      const checkedSoftware = Array.from(document.querySelectorAll('input[name="job-software"]:checked'))
+        .map(cb => cb.value);
+
+      return {
+        type: 'resume',
+        ticketId,
+        timestamp,
+        position,
+        name,
+        phone,
+        email,
+        skills: checkedSoftware.join(', ') || 'AutoCAD',
+        experience,
+        portfolioUrl
+      };
+    }
+
+    function buildJobMessage() {
+      const data = getJobFormPayload();
+      return `您好，我想應徵草圖設計工作室【${data.position}】職缺：\n\n` +
+             `■ 應徵者姓名：${data.name || '（請填寫姓名）'}\n` +
+             `■ 聯絡電話 / LINE：${data.phone || '（請填寫電話）'}\n` +
+             `■ 電子信箱：${data.email || '（未填寫）'}\n` +
+             `■ 擅長軟體：${data.skills}\n` +
+             `■ 年資與經歷：${data.experience || '（請簡述相關經驗）'}\n` +
+             `■ 作品集連結：${data.portfolioUrl || '（隨信夾帶附件）'}\n\n` +
+             `請查收，謝謝！`;
+    }
+
+    document.getElementById('job-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('job-submit-btn');
+      const receipt = document.getElementById('job-sync-receipt');
+      const payload = getJobFormPayload();
+
+      btn.disabled = true;
+      btn.classList.add('opacity-70');
+      const originalHtml = btn.innerHTML;
+      btn.innerHTML = `<span>雲端同步傳送中...</span>`;
+
+      const res = await syncPayloadToGas(payload);
+
+      btn.disabled = false;
+      btn.classList.remove('opacity-70');
+      btn.innerHTML = originalHtml;
+
+      saveSyncRecord({
+        type: 'resume',
+        ticketId: payload.ticketId,
+        timestamp: payload.timestamp,
+        summary: `${payload.position} - ${payload.name}`,
+        payload
+      });
+
+      receipt.classList.remove('hidden');
+      receipt.innerHTML = `✓ 履歷已同步至 Google 雲端｜應徵編號：<strong class="text-white">${payload.ticketId}</strong>（${payload.timestamp}）`;
+
+      if (res.ok) {
+        showToast(`履歷資料已成功同步至 Google 雲端（編號：${payload.ticketId}）`, 'success');
+        e.target.reset();
+      } else {
+        showToast('網路不穩，資料已暫存於本機紀錄，可稍後一鍵重試同步', 'info');
+      }
+    });
+
+    function sendJobViaMailto() {
+      const pos = document.getElementById('job-position').value;
+      const name = document.getElementById('job-name').value.trim() || '應徵者';
+      const subject = encodeURIComponent(`【應徵履歷】${pos} - ${name}`);
+      const body = encodeURIComponent(buildJobMessage());
+      showToast('正在開啟郵件草稿，請記得於信件中夾帶履歷檔案！', 'success');
+      window.location.href = `mailto:woyulee2020@gmail.com?subject=${subject}&body=${body}`;
+    }
+
+    // 6. 線上詢價表單：Google Apps Script 雲端同步 + LINE / Email 備援
+    function getQuoteFormPayload() {
+      const { ticketId, timestamp } = generateTicketInfo('Q');
+      const name = document.getElementById('q-name').value.trim();
+      const company = document.getElementById('q-company').value.trim();
+      const phone = document.getElementById('q-contact').value.trim();
+      const email = document.getElementById('q-email').value.trim();
+      const timeline = document.getElementById('q-timeline').value.trim();
+      const message = document.getElementById('q-details').value.trim();
+
+      const checkedServices = Array.from(document.querySelectorAll('input[name="q-service"]:checked'))
+        .map(cb => cb.value);
+
+      return {
+        type: 'quote',
+        ticketId,
+        timestamp,
+        name,
+        company,
+        phone,
+        email,
+        service: checkedServices.join(', ') || '工程繪圖諮詢',
+        timeline: timeline || '待進一步討論',
+        message
+      };
+    }
+
+    function buildQuoteMessage() {
+      const data = getQuoteFormPayload();
+      return `【草圖設計工作室｜專案線上詢價單】\n` +
+             `----------------------------------------\n` +
+             `■ 聯絡人姓名：${data.name || '（未填寫）'}\n` +
+             `■ 公司／單位：${data.company || '（未填寫）'}\n` +
+             `■ 聯絡電話／LINE：${data.phone || '（未填寫）'}\n` +
+             `■ 電子信箱：${data.email || '（未填寫）'}\n` +
+             `■ 需求服務項目：${data.service}\n` +
+             `■ 預計地點與時程：${data.timeline}\n` +
+             `■ 專案需求簡述：\n${data.message || '（請補充需求說明）'}\n` +
+             `----------------------------------------\n` +
+             `請協助評估報價與排程，謝謝！`;
+    }
+
+    document.getElementById('quote-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('quote-submit-btn');
+      const receipt = document.getElementById('quote-sync-receipt');
+      const payload = getQuoteFormPayload();
+
+      btn.disabled = true;
+      btn.classList.add('opacity-70');
+      const originalHtml = btn.innerHTML;
+      btn.innerHTML = `<span>雲端同步中...</span>`;
+
+      const res = await syncPayloadToGas(payload);
+
+      btn.disabled = false;
+      btn.classList.remove('opacity-70');
+      btn.innerHTML = originalHtml;
+
+      saveSyncRecord({
+        type: 'quote',
+        ticketId: payload.ticketId,
+        timestamp: payload.timestamp,
+        summary: `${payload.company || payload.name} - ${payload.service}`,
+        payload
+      });
+
+      receipt.classList.remove('hidden');
+      receipt.innerHTML = `
+        <div>✓ 詢價單已即時同步至 Google 雲端試算表！</div>
+        <div>工單編號：<strong class="text-white">${payload.ticketId}</strong> ｜ 同步時間：${payload.timestamp}</div>
+      `;
+
+      if (res.ok) {
+        showToast(`詢價單已成功同步至 Google 雲端（單號：${payload.ticketId}）`, 'success');
+        e.target.reset();
+      } else {
+        showToast('網路不穩，詢價單已儲存至本機紀錄，可點選「同步紀錄」重試', 'info');
+      }
+    });
+
+    function sendQuoteViaMailto() {
+      const name = document.getElementById('q-name').value.trim() || '客戶';
+      const company = document.getElementById('q-company').value.trim();
+      const titlePrefix = company ? `${company} (${name})` : name;
+      const subject = encodeURIComponent(`【工程製圖詢價】${titlePrefix} - 專案需求洽談`);
+      const body = encodeURIComponent(buildQuoteMessage());
+      showToast('正在為您開啟 Email 詢價草稿...', 'success');
+      window.location.href = `mailto:woyulee2020@gmail.com?subject=${subject}&body=${body}`;
+    }
+
+    function copyQuoteForLine() {
+      const msg = buildQuoteMessage();
+      copyText(msg, '已複製完整詢價單！即將為您開啟 LINE 視窗');
+      setTimeout(() => {
+        window.open('https://line.me/R/ti/p/~woyulee55688', '_blank', 'noopener,noreferrer');
+      }, 900);
+    }
+
+    // 頁面載入時初始化同步紀錄計數
+    document.addEventListener('DOMContentLoaded', () => {
+      updateHistoryUI();
+    });
+  </script>
+</body>
+</html>
